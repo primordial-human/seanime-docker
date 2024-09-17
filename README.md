@@ -77,7 +77,7 @@ assetdir = '$SEANIME_DATA_DIR/assets'
 Next, create a `qBittorrent.conf` file to configure qBittorrent with default settings, including setting the default password. This file should also be located on your host system.
 
 ```bash
-nano ./seanime/config/qbittorrent/qBittorrent.conf
+nano ./seanime/config/qBittorrent/qBittorrent.conf
 ```
 
 Paste the following content into `qBittorrent.conf`:
@@ -133,18 +133,19 @@ nano docker-compose.yml
 Add the following content:
 
 ```yaml
-version: '3'
+
 services:
   seanime:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: primordialhuman/seanime:2.1.1
     ports:
       - "8080:8080"
       - "43211:43211"
     volumes:
       - ./seanime/config:/home/seanime/.config/Seanime
-      - ./seanime/config/qbittorrent:/home/seanime/.config/qBittorrent
+      - ./seanime/config/qBittorrent:/home/seanime/.config/qBittorrent
+
+   
+
 ```
 
 ### Step 5: Run the Application
