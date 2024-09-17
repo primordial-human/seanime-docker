@@ -1,0 +1,11 @@
+services:
+  seanime:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+      - "43211:43211"
+    volumes:
+      - ./seanime/config:/home/seanime/.config/Seanime
+      - ./seanime/config/qbittorrent:/home/seanime/.config/qBittorrent
