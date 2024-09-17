@@ -1,15 +1,19 @@
-Seanime Docker Setup Guide
-Welcome to the Seanime setup guide. This guide will walk you through running your own instance of Seanime using Docker. You can easily pull the pre-built Docker image and set up the necessary configuration files on your host machine.
+# Seanime Docker Setup Guide
 
-Prerequisites
-Docker installed on your system. Get Docker
-Docker Compose installed. Install Docker Compose
-Quick Start
-Step 1: Pull the Docker Image
+Welcome to the **Seanime** setup guide. This guide will walk you through running your own instance of Seanime using Docker. You can easily pull the pre-built Docker image and set up the necessary configuration files on your host machine.
+
+## Prerequisites
+
+- Docker installed on your system. [Get Docker](https://docs.docker.com/get-docker/)
+- Docker Compose installed. [Install Docker Compose](https://docs.docker.com/compose/install/)
+  
+## Quick Start
+
+### Step 1: Pull the Docker Image
+
 To pull the latest version of the Seanime Docker image, run the following command:
 
-bash
-Copy code
+```bash
 docker pull primordialhuman/seanime:2.1.1
 Step 2: Create the config.toml File
 Create a config.toml file in a directory on your host system. This file contains configuration settings for Seanime.
@@ -146,4 +150,3 @@ Ensure that all required directories for configuration and volumes are created a
 If there are any port conflicts, make sure the necessary ports (8080 and 43211) are available or adjust the docker-compose.yml file to use alternative ports.
 Conclusion
 You now have your own instance of Seanime up and running using Docker. Feel free to contribute to the project or customize your instance as needed. If you encounter any issues, please open a ticket in the repository, and we’ll be happy to help!
-
