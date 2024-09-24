@@ -156,6 +156,11 @@ Now, you can start the services using Docker Compose:
 docker-compose up
 ```
 
+accessing qbittorrent on port 8080
+creds : 
+username : admin
+password : admin123
+
 This command will build and start Seanime and qBittorrent, exposing the application on ports `8080` and `43211`.
 
 ### Step 6: Access the Application
